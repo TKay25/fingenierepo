@@ -240,8 +240,8 @@ h6 {
   .navmenu a,
   .navmenu a:focus {
     color: var(--nav-color);
-    padding: 18px 12px;
-    font-size: 15px;
+    padding: 12px 8px;
+    font-size: 17px;
     font-family: var(--nav-font);
     font-weight: 500;
     display: flex;
@@ -253,7 +253,7 @@ h6 {
 
   .navmenu a i,
   .navmenu a:focus i {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 0;
     margin-left: 5px;
     transition: 0.3s;
@@ -922,7 +922,7 @@ section,
   font-size: 2rem;
   white-space: nowrap; /* Prevent wrapping */
   overflow: hidden; /* Hide overflowing text */
-  margin-top: -450px;
+  margin-top: -420px;
 }
 
 @keyframes blink {
