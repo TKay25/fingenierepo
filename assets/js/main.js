@@ -84,10 +84,103 @@
   // Start the typing effect
   typeEffect();
   
+  // Second Typing Effect
+  const text2 = "What We Do ...";
+  let index2 = 0;
+  let isDeleting2 = false; // Track whether we are typing or deleting
+  const typingSpeed2 = 150; // Typing speed
+  const deletingSpeed2 = 50; // Deleting speed
+  const pauseDuration2 = 4000; // Pause duration after typing completes
   
+  function typeEffect2() {
+      const element2 = document.getElementById("typing-effect2");
   
+      if (!isDeleting2) {
+          // Typing phase
+          element2.textContent = text2.slice(0, index2);
+          index2++;
   
+          if (index2 === 1) {
+              // Apply fade-in effect at the start of typing
+              element2.classList.add("fade-in");
+          }
   
+          if (index2 > text2.length) {
+              // Pause briefly before starting deletion
+              setTimeout(() => {
+                  isDeleting2 = true;
+                  typeEffect2(); // Correctly call typeEffect2 here
+              }, pauseDuration2);
+              return;
+          }
+      } else {
+          // Deleting phase
+          element2.textContent = text2.slice(0, index2);
+          index2--;
+  
+          if (index2 < 0) {
+              // Reset for next typing cycle
+              isDeleting2 = false;
+              element2.classList.remove("fade-in"); // Remove fade-in to reapply
+          }
+      }
+  
+      // Adjust speed based on phase
+      const speed2 = isDeleting2 ? deletingSpeed2 : typingSpeed2;
+      setTimeout(typeEffect2, speed2);
+  }
+  
+  // Start the second typing effect
+  typeEffect2();
+  
+ // Second Typing Effect
+ const text3 = "Check Out Our Services ...";
+ let index3 = 0;
+ let isDeleting3 = false; // Track whether we are typing or deleting
+ const typingSpeed3 = 100; // Typing speed
+ const deletingSpeed3 = 50; // Deleting speed
+ const pauseDuration3 = 4000; // Pause duration after typing completes
+ 
+ function typeEffect3() {
+     const element3 = document.getElementById("typing-effect3");
+ 
+     if (!isDeleting3) {
+         // Typing phase
+         element3.textContent = text3.slice(0, index3);
+         index3++;
+ 
+         if (index3 === 1) {
+             // Apply fade-in effect at the start of typing
+             element3.classList.add("fade-in");
+         }
+ 
+         if (index3 > text3.length) {
+             // Pause briefly before starting deletion
+             setTimeout(() => {
+                 isDeleting3 = true;
+                 typeEffect3(); // Correctly call typeEffect2 here
+             }, pauseDuration3);
+             return;
+         }
+     } else {
+         // Deleting phase
+         element3.textContent = text3.slice(0, index3);
+         index3--;
+ 
+         if (index3 < 0) {
+             // Reset for next typing cycle
+             isDeleting3 = false;
+             element3.classList.remove("fade-in"); // Remove fade-in to reapply
+         }
+     }
+ 
+     // Adjust speed based on phase
+     const speed3 = isDeleting3 ? deletingSpeed3 : typingSpeed3;
+     setTimeout(typeEffect3, speed3);
+ }
+ 
+ // Start the second typing effect
+ typeEffect3();  
 
   /**
    * Hide mobile nav on same-page/hash links
@@ -113,35 +206,46 @@
     });
   });
 
-  // Array of image URLs
+// Array of image URLs
 const images = [
-  "assets//img//hero-img.png",
-  "assets/img/logofg.png",
-  "assets/img/image3.png",
+  "assets/img/6876640.jpg",
+  "assets/img/5252445.jpg",
+  "assets/img/5174562.jpg",
+  "assets/img/5746312.jpg",
 ];
 
 let currentIndex = 0; // Track the current image
+let isFirstRun = true; // Flag for the first image
 
 function showNextImage() {
   const imgElement = document.getElementById("hero-image");
 
-  // Start fade-out
-  imgElement.classList.remove("show");
+  if (isFirstRun) {
+    // On first run, just show the first image without delay
+    imgElement.src = images[currentIndex];
+    imgElement.classList.add("show");
+    isFirstRun = false; // Disable first-run flag
+  } else {
+    // Fade-out current image
+    imgElement.classList.remove("show");
 
-  setTimeout(() => {
+    setTimeout(() => {
       // Update the image source
+      currentIndex = (currentIndex + 1) % images.length;
       imgElement.src = images[currentIndex];
 
       // Start fade-in
       imgElement.classList.add("show");
-
-      // Move to the next image
-      currentIndex = (currentIndex + 1) % images.length;
-  }, 500); // Allow fade-out to complete before updating
+    }, 500); // Allow fade-out to complete before updating
+  }
 }
 
-// Call the function every 3 seconds
-setInterval(showNextImage, 3000);
+// Start immediately
+showNextImage();
+
+// Call the function every 4 seconds
+setInterval(showNextImage, 4000);
+
 
 // Add the `show` class to the first image initially
 document.getElementById("hero-image").classList.add("show");

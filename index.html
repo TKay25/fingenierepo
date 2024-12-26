@@ -38,31 +38,32 @@
 
 <body class="index-page">
 
-  <header id="header" class="header d-flex align-items-center fixed-top"  style="border-bottom: 15px solid #012970;border-bottom-right-radius: 15px;border-bottom-left-radius: 15px;">
+  <header id="header" class="header d-flex align-items-center fixed-top"  style="border-bottom-right-radius: 15px;border-bottom-left-radius: 15px;background-color: #012970;">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="assets/img/logofg.png" alt="">
-        <h1 class="sitename">FinGenie Consultancy</h1>
+        <h1 class="sitename" style="color: white;">FinGenie Consultancy</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active"><b>Home</b><br></a></li>
-          <li><a href="#about"><b>About Us</b></a></li>
+          <li><a href="#features"><b>About Us</b></a></li>
           <li><a href="#services"><b>Services</b></a></li>
-          <li class="dropdown"><a href="#"><span>Product Catalogue</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="#"><span><b>Product Catalogue</b></span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
                <!-- <li><a href="#">Dropdown 1</a></li>  -->
               <li class="dropdown"><a href="#"><span>FinTech Solutions</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
-                  <li><a href="#">Neighborhood Eye</a></li>
+                  <li><a onclick="window.location.href='neighborhoodeye.html'">Neighborhood Eye</a></li>
                 </ul>
               </li>
             </ul>
           </li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact"><b>Contact</b></a></li>
+           <!-- <li><a href="#contact"><img src="assets/img/facebook.png" alt="" style="width: 10%;"></a></li> -->
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -88,7 +89,7 @@
             </div>
           </div>
           <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out">
-            <img id="hero-image" class="fade-right" alt="Hero Image">
+            <img id="hero-image" class="fade-right popout-button">
         </div>
         </div>
       </div>
@@ -109,172 +110,118 @@
     </section><!-- /Hero Section -->
 
 
-    <!-- Values Section -->
-    <section id="about" class="about section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About Us</h2>
-        <p> What We Do<br></p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100" >
-            <div class="card" style="border: none;border-radius: 15px;border-left: 15px solid #012970">
-              <img src="assets/img/bulb2.png" class="img-fluid popout-button" alt="" style="width: 40%; margin: auto;">
-              <h3 style="text-align: center;border-left: 15px solid #012970;padding: 10px;">Comprehensive Solutions for the FinTech Industry</h3>
-              <p style="text-align: justify;">We specialize in providing comprehensive solutions tailored to meet the specific needs of businesses in the financial technology industry. From initial system design and development to implementation, maintenance, and ongoing support, we offer end-to-end services that empower organizations to thrive in the digital era..</p>
-            </div>
-          </div><!-- End Card Item -->
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="card" style="border: none;border-radius: 15px;border-left: 15px solid #012970">
-              <img src="assets/img/securityfg.png" class="img-fluid popout-button" alt="" style="width: 40%; margin: auto;"> <br>
-              <h3 style="text-align: center;border-left: 15px solid #012970;padding: 10px;"> Security-First Approach to Fintech Solutions</h3>
-              <p style="text-align: justify;">With security being paramount in the fintech landscape, we prioritize the integrity and confidentiality of our clients' data. Our expertise lies in developing secure fintech systems that comply with industry regulations and protect against cyber threats. We implement advanced security measures and adhere to best practices to ensure that sensitive information remains safeguarded throughout the digital ecosystem.</p>
-            </div>
-          </div><!-- End Card Item -->
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="card" style="border: none;border-radius: 15px;border-left: 15px solid #012970">
-              <img src="assets/img/datafg.png" class="img-fluid popout-button" alt="" style="width: 37%; margin: auto;">
-              <h3 style="text-align: center;border-left: 15px solid #012970;padding: 10px;">Data-Driven Insights for Business Growth and Market Competitiveness.</h3>
-              <p style="text-align: justify;">Our team of data experts collaborates closely with clients to understand their specific needs and develop tailored analytics strategies that enable them to gain valuable intelligence, identify trends, and enhance competitiveness in the market..</p>
-            </div>
-          </div><!-- End Card Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Values Section -->
-
-    <!-- Stats Section -->
-    <section id="stats" class="stats section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item d-flex align-items-center w-100 h-100">
-              <i class="bi bi-emoji-smile color-blue flex-shrink-0"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Happy Clients</p>
-              </div>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item d-flex align-items-center w-100 h-100">
-              <i class="bi bi-journal-richtext color-orange flex-shrink-0" style="color: #ee6c20;"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Projects</p>
-              </div>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item d-flex align-items-center w-100 h-100">
-              <i class="bi bi-headset color-green flex-shrink-0" style="color: #15be56;"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Hours Of Support</p>
-              </div>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item d-flex align-items-center w-100 h-100">
-              <i class="bi bi-people color-pink flex-shrink-0" style="color: #bb0852;"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Hard Workers</p>
-              </div>
-            </div>
-          </div><!-- End Stats Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Stats Section -->
-
     <!-- Features Section -->
     <section id="features" class="features section">
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Features</h2>
-        <p>Our Advacedd Features<br></p>
+      <div class="container section-title" data-aos="fade-up" style="margin-top: -40px;">
+        <h2>ABOUT US</h2>
+        <h1 id="typing-effect2" style="font-weight: bold;"></h1><br>
       </div><!-- End Section Title -->
 
       <div class="container">
 
         <div class="row gy-5">
 
-          <div class="col-xl-6" data-aos="zoom-out" data-aos-delay="100">
-            <img src="assets/img/features.png" class="img-fluid" alt="">
+          <div class="col-xl-6 bounce-image" data-aos="zoom-out" data-aos-delay="100">
+            <img src="assets/img/bulb2.png" class="img-fluid" alt="" style="width: 20%;margin-left: -70px;margin-top: 70px;">
           </div>
 
-          <div class="col-xl-6 d-flex">
-            <div class="row align-self-center gy-4">
+          <div class="col-xl-6 bounce-image" data-aos="zoom-out" data-aos-delay="100" id="security">
+            <img src="assets/img/securityfg.png" class="img-fluid" alt="" style="width: 19%;margin-left: 0px;margin-top: 70px;">
+          </div>
 
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                <div class="feature-box d-flex align-items-center">
-                  <i class="bi bi-check"></i>
-                  <h3>Eos aspernatur rem</h3>
+          <div class="col-xl-6 bounce-image" data-aos="zoom-out" data-aos-delay="100" id="data">
+            <img src="assets/img/datafg.jpg" class="img-fluid" alt="" style="width: 25%;margin-left: 300px;margin-top: 130px;">
+          </div>
+
+          <div class="col-xl-6 d-flex flex-column">
+            <div class="row align-self-center gy-4 flex-column">
+          
+              <div class="col-md-12" data-aos="fade-up" data-aos-delay="200" style="margin-left: -560px;margin-top: -200px;">
+                <div class="feature-box d-flex align-items-start flex-column">
+                  <div class="feature-box2 d-flex align-items-center">
+                    <i class="bi bi-check" style="margin-right: 10px;"></i>
+                    <h3 style="margin: 0;">Comprehensive Solutions for the FinTech Industry</h3>
+                  </div>
+                  <p style="text-align: justify; margin-top: 10px;">
+                    We specialize in providing comprehensive solutions tailored to meet the specific needs of businesses in the financial technology industry. From initial system design and development to implementation, maintenance, and ongoing support, we offer end-to-end services that empower organizations to thrive in the digital era..                  </p>
                 </div>
-              </div><!-- End Feature Item -->
-
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <div class="feature-box d-flex align-items-center">
-                  <i class="bi bi-check"></i>
-                  <h3>Facilis neque ipsa</h3>
-                </div>
-              </div><!-- End Feature Item -->
-
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-                <div class="feature-box d-flex align-items-center">
-                  <i class="bi bi-check"></i>
-                  <h3>Volup amet volupt</h3>
-                </div>
-              </div><!-- End Feature Item -->
-
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
-                <div class="feature-box d-flex align-items-center">
-                  <i class="bi bi-check"></i>
-                  <h3>Rerum omnis sint</h3>
-                </div>
-              </div><!-- End Feature Item -->
-
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
-                <div class="feature-box d-flex align-items-center">
-                  <i class="bi bi-check"></i>
-                  <h3>Alias possimus</h3>
-                </div>
-              </div><!-- End Feature Item -->
-
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="700">
-                <div class="feature-box d-flex align-items-center">
-                  <i class="bi bi-check"></i>
-                  <h3>Repellendus molli</h3>
-                </div>
-              </div><!-- End Feature Item -->
-
+              </div>
+          
+              <div class="col-md-12" data-aos="fade-up" data-aos-delay="200" style="margin-left: 180px;margin-top: -280px;">
+                <div class="feature-box d-flex align-items-start flex-column">
+                  <div class="feature-box2 d-flex align-items-center">
+                    <i class="bi bi-check" style="margin-right: 10px;"></i>
+                    <h3 style="margin: 0;">Security-First Approach to Fintech Solutions</h3>
+                  </div>
+                  <p style="text-align: justify; margin-top: 10px;">
+                    With security being paramount in the fintech landscape, we prioritize the integrity and confidentiality of our clients' data. Our expertise lies in developing secure fintech systems that comply with industry regulations and protect against cyber threats. We implement advanced security measures and adhere to best practices to ensure that sensitive information remains safeguarded throughout the digital ecosystem.                </div>
+              </div>
+          
+              <div class="col-md-12" data-aos="fade-up" data-aos-delay="200" style="margin-left: -180px;">
+                <div class="feature-box d-flex align-items-start flex-column">
+                  <div class="feature-box2 d-flex align-items-center">
+                    <i class="bi bi-check" style="margin-right: 10px;"></i>
+                    <h3 style="margin: 0;">Data-Driven Insights for Business Growth and Market Competitiveness.</h3>
+                  </div>
+                  <p style="text-align: justify; margin-top: 10px;">
+                    Our team of data experts collaborates closely with clients to understand their specific needs and develop tailored analytics strategies that enable them to gain valuable intelligence, identify trends, and enhance competitiveness in the market..              </div>
+          
             </div>
           </div>
+          
+
+        </div>
+
+      </div>
+    </section><!-- /Features Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up" style="margin-top: -40px;">
+        <h2>Services</h2>
+        <h1 id="typing-effect3" style="font-weight: bold;"></h1><br>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4" style="margin-top: 30px;">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100" style="width: 27%;padding-bottom: 10px;">
+            <div class="service-item item-cyan position-relative">
+              <i class="bi bi-briefcase-fill icon"></i>
+              <h3>FinTech Solutions</h3>
+              <p>We specialize in providing comprehensive solutions tailored to meet the specific needs of businesses in the financial technology industry. From initial system design and development to implementation, maintenance, and ongoing support, we offer end-to-end services that empower organizations to thrive in the digital era.</p>
+              <a href="#" class="read-more stretched-link"><span>Request Service</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200" style="width: 33%;">
+            <div class="service-item item-cyan position-relative">
+              <i class="bi bi-activity icon"></i>
+              <h3>Financial Modeling</h3>
+              <p>Our Financial Modeling Services are designed to help businesses make informed, data-driven decisions and achieve their strategic objectives. We develop detailed financial models that provide insights into forecasting and budgeting, enabling businesses to plan effectively and allocate resources efficiently. Our valuation models assess the worth of businesses, projects, or investment opportunities, ensuring you make the best financial decisions. We also offer scenario analysis to evaluate the impact of various market conditions and business strategies, helping you to identify risks and opportunities. By optimizing capital structures and supporting mergers and acquisitions, our financial modeling services offer comprehensive solutions that drive growth and enhance financial performance.</p>
+              <a href="#" class="read-more stretched-link"><span>Request Service</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300" style="width: 40%;">
+            <div class="service-item item-cyan position-relative">
+              <i class="bi bi-calculator-fill icon"></i>
+              <h3>Financial Accounting</h3>
+              <p>Our Financial Accounting Services are crafted to ensure accuracy, compliance, and strategic financial management for your business. We offer meticulous bookkeeping services to record and organize your financial transactions, alongside comprehensive financial statement preparation to provide clear insights into your business’s financial health. Our tax planning and compliance services help minimize tax liabilities while ensuring adherence to all relevant regulations. We also manage payroll processing, ensuring timely and accurate payment to employees. Through detailed financial analysis and reporting, we deliver actionable insights that drive business performance. Our auditing services provide assurance of the reliability of your financial information, and our management consulting offers strategic guidance to support your business goals. With our expert financial accounting services, you can confidently navigate your financial landscape and achieve sustainable growth.</p>
+              <a href="#" class="read-more stretched-link"><span>Request Service</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
 
         </div>
 
       </div>
 
-    </section><!-- /Features Section -->
+    </section><!-- /Services Section -->
 
     <!-- Alt Features Section -->
     <section id="alt-features" class="alt-features section">
@@ -349,78 +296,7 @@
 
     </section><!-- /Alt Features Section -->
 
-    <!-- Services Section -->
-    <section id="services" class="services section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Check Our Services<br></p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item item-cyan position-relative">
-              <i class="bi bi-activity icon"></i>
-              <h3>Nesciunt Mete</h3>
-              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
-              <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item item-orange position-relative">
-              <i class="bi bi-broadcast icon"></i>
-              <h3>Eosle Commodi</h3>
-              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
-              <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item item-teal position-relative">
-              <i class="bi bi-easel icon"></i>
-              <h3>Ledo Markt</h3>
-              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
-              <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item item-red position-relative">
-              <i class="bi bi-bounding-box-circles icon"></i>
-              <h3>Asperiores Commodi</h3>
-              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-              <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item item-indigo position-relative">
-              <i class="bi bi-calendar4-week icon"></i>
-              <h3>Velit Doloremque.</h3>
-              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
-              <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item item-pink position-relative">
-              <i class="bi bi-chat-square-text icon"></i>
-              <h3>Dolori Architecto</h3>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-              <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Services Section -->
 
     <!-- Pricing Section -->
     <section id="pricing" class="pricing section">
