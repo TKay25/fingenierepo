@@ -49,7 +49,7 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active"><b>Home</b><br></a></li>
+          <li><a onclick="window.location.href='index.html'" class="active"><b>Home</b><br></a></li>
           <li><a href="#features"><b>About Us</b></a></li>
           <li><a href="#services"><b>Services</b></a></li>
           <li class="dropdown"><a href="#"><span><b>Product Catalogue</b></span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -77,28 +77,27 @@
 
       <div class="container">
         <div class="row gy-4">
-          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center ">
-            <div class="container section-title" data-aos="fade-up" style="margin-left: -280px;">
-              <h2>Neighborhood Eye</h2>
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center " style="margin-left: 600px;">
+            <div class="container section-title" data-aos="fade-up" style="margin-left: 280px;">
+              <h2>Neighborhood Eye App</h2>
             </div><!-- End Section Title -->
-            <h1 id="typing-effect"></h1><br>
+            <h1 id="typing-effect"></h1>
             <p data-aos="fade-left" data-aos-delay="300" style="background-color: #0d6dfd04;border-radius: 15px; padding-left: 25px;border-left: 15px solid #012970;color:#012970; text-align: justify;padding-top: 12px;padding-bottom: 12px;margin-top: 20px;">Neighborhood Eye is a mobile application designed to enhance community engagement and safety by providing users with a platform to connect and stay updated on news and activities within their neighborhood. Users can receive announcements and alerts, report incidents, manage guests, and access financial features such as invoicing, expense management, financial statements and income and expenditure reports.</p>
           </div>
-          <div class="d-flex flex-column flex-md-row" data-aos="fade-up" data-aos-delay="300">
+            <img src="assets/img/neighborhoodeyeapp.png" id="hero-image3" class="fade-right popout-button" style="width: 22%;margin-top: -70px;margin-left: 150px;position: absolute;">
+          <div class="d-flex flex-column flex-md-row" data-aos="fade-up" data-aos-delay="300" style="margin-top:490px;position: absolute;">
             <a href="#" class="btn-get-started popout-button">Get it on Google Play<i class="bi bi-arrow-right"></i></a>
             <a href="#" class="btn-get-started popout-button" style="margin-left: 20px;">Web Access<i class="bi bi-arrow-right"></i></a>
             <a href="#" class="btn-get-started popout-button" style="margin-left: 20px;">Coming Soon on Apple</a>
           </div>
-            <img src="assets/img/neighborhoodeyeapp.png" id="hero-image" class="fade-right popout-button" style="width: 30%;">
+          <img src="assets/img/neighborhoodeyeapp.png" id="hero-image" class="fade-right popout-button" style="width: 30%;display: none;">
         </div>
       </div>
-    </section><!-- /Hero Section -->
+    </section>
 
 
-    <!-- Features Section -->
     <section id="features" class="features section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up" style="margin-top: -40px;">
         <h2>ABOUT US</h2>
         <h1 id="typing-effect2" style="font-weight: bold;"></h1><br>
@@ -160,55 +159,8 @@
         </div>
 
       </div>
-    </section><!-- /Features Section -->
+    </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up" style="margin-top: -40px;">
-        <h2>Services</h2>
-        <h1 id="typing-effect3" style="font-weight: bold;"></h1><br>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4" style="margin-top: 30px;">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100" style="width: 27%;padding-bottom: 10px;">
-            <div class="service-item item-cyan position-relative">
-              <i class="bi bi-briefcase-fill icon"></i>
-              <h3>FinTech Solutions</h3>
-              <p>We specialize in providing comprehensive solutions tailored to meet the specific needs of businesses in the financial technology industry. From initial system design and development to implementation, maintenance, and ongoing support, we offer end-to-end services that empower organizations to thrive in the digital era.</p>
-              <a href="#" class="read-more stretched-link"><span>Request Service</span> <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200" style="width: 33%;">
-            <div class="service-item item-cyan position-relative">
-              <i class="bi bi-activity icon"></i>
-              <h3>Financial Modeling</h3>
-              <p>Our Financial Modeling Services are designed to help businesses make informed, data-driven decisions and achieve their strategic objectives. We develop detailed financial models that provide insights into forecasting and budgeting, enabling businesses to plan effectively and allocate resources efficiently. Our valuation models assess the worth of businesses, projects, or investment opportunities, ensuring you make the best financial decisions. We also offer scenario analysis to evaluate the impact of various market conditions and business strategies, helping you to identify risks and opportunities. By optimizing capital structures and supporting mergers and acquisitions, our financial modeling services offer comprehensive solutions that drive growth and enhance financial performance.</p>
-              <a href="#" class="read-more stretched-link"><span>Request Service</span> <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300" style="width: 40%;">
-            <div class="service-item item-cyan position-relative">
-              <i class="bi bi-calculator-fill icon"></i>
-              <h3>Financial Accounting</h3>
-              <p>Our Financial Accounting Services are crafted to ensure accuracy, compliance, and strategic financial management for your business. We offer meticulous bookkeeping services to record and organize your financial transactions, alongside comprehensive financial statement preparation to provide clear insights into your business’s financial health. Our tax planning and compliance services help minimize tax liabilities while ensuring adherence to all relevant regulations. We also manage payroll processing, ensuring timely and accurate payment to employees. Through detailed financial analysis and reporting, we deliver actionable insights that drive business performance. Our auditing services provide assurance of the reliability of your financial information, and our management consulting offers strategic guidance to support your business goals. With our expert financial accounting services, you can confidently navigate your financial landscape and achieve sustainable growth.</p>
-              <a href="#" class="read-more stretched-link"><span>Request Service</span> <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Services Section -->
-
-    <!-- Alt Features Section -->
     <section id="alt-features" class="alt-features section">
 
       <div class="container">
@@ -374,6 +326,7 @@
       </div>
 
     </section><!-- /Pricing Section -->
+    <h1 id="typing-effect3" style="font-weight: bold;display: none;"></h1><br>
 
     <!-- Faq Section -->
     <section id="faq" class="faq section">
@@ -457,181 +410,6 @@
       </div>
 
     </section><!-- /Faq Section -->
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Check our latest work</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Product</li>
-            <li data-filter=".filter-branding">Branding</li>
-            <li data-filter=".filter-books">Books</li>
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-2.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-3.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-3.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Portfolio Section -->
 
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section">
