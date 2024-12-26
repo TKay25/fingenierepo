@@ -774,6 +774,7 @@ section,
   text-align: center;
   padding-bottom: 60px;
   position: relative;
+  margin-left: -280px;
 }
 
 .card{
@@ -901,10 +902,55 @@ section,
   overflow: hidden; /* Hide overflowing text */
   margin-top: -400px;
 }
+#par1{
+  background-color: #0d6dfd04;
+  border-radius: 15px; 
+  padding-left: 25px;
+  border-left: 15px solid #012970;
+  color:#012970; 
+  text-align: justify;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-top: 20px;
+}
 
 @media (max-width: 768px) {
   .pricing-tem {
     width: 100%; /* Ensure the cards take full width on smaller screens */
+  }
+
+  #hero-image {
+    transition: opacity 1s ease-in-out; /* Smooth fade transition */
+    opacity: 0; /* Initial state for fade-out */
+    width: 50%;
+    margin-left: 150px;
+  }
+
+  .section-title {
+    text-align: center;
+    padding-bottom: 60px;
+    position: relative;
+    margin-left: 0px;
+  }
+
+  #typing-effect {
+    position: absolute;
+    font-size: 1.5rem;
+    white-space: nowrap; /* Prevent wrapping */
+    overflow: hidden; /* Hide overflowing text */
+    margin-top: -400px;
+  }
+  #par1{
+    background-color: #0d6dfd04;
+    border-radius: 8px; 
+    padding-left: 15px;
+    border-left: 15px solid #012970;
+    color:#012970; 
+    text-align: justify;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-top: 5px;
+    font-size: 14px;
   }
 }
 
