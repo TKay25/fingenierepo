@@ -890,7 +890,7 @@ section,
   transform: translate(-50%, -50%); /* Offset to truly center */
 }
 
-#typing-effect3 {
+#typing-effect3, #typing-effect4 {
   margin-top: 20px;
   position: absolute;
   font-size: 2rem;
@@ -1228,28 +1228,30 @@ section,
 /*--------------------------------------------------------------
 # Alt Features Section
 --------------------------------------------------------------*/
-.alt-features .icon-box {
-  display: flex;
+.icon-box {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  margin: 10px;
+}
+.accordion-button {
+  font-weight: bold;
+  font-size: 16px;
 }
 
-.alt-features .icon-box h4 {
-  font-size: 20px;
-  font-weight: 700;
-  margin: 0 0 10px 0;
+.accordion-button i {
+  font-size: 1em;
 }
 
-.alt-features .icon-box i {
-  font-size: 44px;
-  line-height: 44px;
-  color: var(--accent-color);
-  margin-right: 15px;
+.accordion-body {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-top: 1px solid #ddd;
 }
 
-.alt-features .icon-box p {
-  font-size: 15px;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-  margin-bottom: 0;
-}
+
 
 /*--------------------------------------------------------------
 # Services Section

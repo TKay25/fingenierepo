@@ -182,6 +182,57 @@
  // Start the second typing effect
  typeEffect3();  
 
+// Second Typing Effect
+const text4 = "Neighborhood Eye App Features ...";
+let index4 = 0;
+let isDeleting4 = false; // Track whether we are typing or deleting
+const typingSpeed4 = 100; // Typing speed
+const deletingSpeed4 = 50; // Deleting speed
+const pauseDuration4 = 4000; // Pause duration after typing completes
+
+function typeEffect4() {
+    const element4 = document.getElementById("typing-effect4");
+
+    if (!isDeleting4) {
+        // Typing phase
+        element4.textContent = text4.slice(0, index4);
+        index4++;
+
+        if (index4 === 1) {
+            // Apply fade-in effect at the start of typing
+            element4.classList.add("fade-in");
+        }
+
+        if (index4 > text4.length) {
+            // Pause briefly before starting deletion
+            setTimeout(() => {
+                isDeleting4 = true;
+                typeEffect4(); // Correctly call typeEffect2 here
+            }, pauseDuration4);
+            return;
+        }
+    } else {
+        // Deleting phase
+        element4.textContent = text4.slice(0, index4);
+        index4--;
+
+        if (index4 < 0) {
+            // Reset for next typing cycle
+            isDeleting4 = false;
+            element4.classList.remove("fade-in"); // Remove fade-in to reapply
+        }
+    }
+
+    // Adjust speed based on phase
+    const speed4 = isDeleting4 ? deletingSpeed4 : typingSpeed4;
+    setTimeout(typeEffect4, speed4);
+}
+
+// Start the second typing effect
+typeEffect4();  
+
+
+
   /**
    * Hide mobile nav on same-page/hash links
    */

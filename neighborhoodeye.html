@@ -50,8 +50,17 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a onclick="window.location.href='index.html'" class="active"><b>Home</b><br></a></li>
-          <li><a href="#features"><b>About Us</b></a></li>
-          <li><a href="#services"><b>Services</b></a></li>
+          <li><a href="#hero"><b>App Brief</b></a></li>
+          <li class="dropdown"><a href="#"><span><b>App Features</b></span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+               <li><a href="#features"><b>ALL</b></a></li>
+               <li><a href="#features2"><b>FEATURED</b></a></li>
+
+            </ul>
+          </li>
+
+
+          <li><a href="#pricing"><b>Plans</b></a></li>
           <li class="dropdown"><a href="#"><span><b>Product Catalogue</b></span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
                <!-- <li><a href="#">Dropdown 1</a></li>  -->
@@ -77,15 +86,17 @@
 
       <div class="container">
         <div class="row gy-4">
-          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center " style="margin-left: 600px;margin-top: -600px;">
-            <div class="container section-title" data-aos="fade-up" style="margin-left: 280px;">
-              <h2>Neighborhood Eye App</h2>
-            </div><!-- End Section Title -->
-            <h1 id="typing-effect"></h1>
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center " style="margin-left: 600px;margin-top: -800px;">
+            <div class="container section-title" data-aos="fade-up" style="margin-left: -250px;margin-top: 100px;">
+              <h2>PRODUCT BRIEF</h2>
+            </div>
+            <h1 style="margin-top: -40px;">Neighborhood Eye App</h1>
+            <h1 id="typing-effect" style="display: none;"></h1>
             <p data-aos="fade-left" data-aos-delay="300" style="background-color: #0d6dfd04;border-radius: 15px; padding-right: 25px;border-right: 15px solid #012970;color:#012970; text-align: justify;padding-top: 12px;padding-bottom: 12px;margin-top: 20px;">Neighborhood Eye is a mobile application designed to enhance community engagement and safety by providing users with a platform to connect and stay updated on news and activities within their neighborhood. Users can receive announcements and alerts, report incidents, manage guests, and access financial features such as invoicing, expense management, financial statements and income and expenditure reports.</p>
-          </div>
-            <img src="assets/img/neighborhoodeyeapp.png" id="hero-image3" class="fade-right popout-button" style="width: 20%;margin-top: 20px;margin-left: 150px;position: absolute;">
-          <div class="d-flex flex-column flex-md-row" data-aos="fade-up" data-aos-delay="300" style="margin-top:550px;">
+            <a href="#features" class="btn-get-started popout-button" style="width: 25%;">Learn More<i class="bi bi-arrow-right"></i></a>
+        </div>
+            <img src="assets/img/neighborhoodeyeapp.png" id="hero-image3" class="fade-right popout-button" style="width: 20%;margin-top: 50px;margin-left: 150px;position: absolute;">
+          <div class="d-flex flex-column flex-md-row" data-aos="fade-up" data-aos-delay="300" style="margin-top:590px;">
             <a href="#" class="btn-get-started popout-button">Get it on Google Play<i class="bi bi-arrow-right"></i></a>
             <a href="#" class="btn-get-started popout-button" style="margin-left: 20px;">Web Access<i class="bi bi-arrow-right"></i></a>
             <a href="#" class="btn-get-started popout-button" style="margin-left: 20px;">Coming Soon on Apple</a>
@@ -99,69 +110,11 @@
     <section id="features" class="features section">
 
       <div class="container section-title" data-aos="fade-up" style="margin-top: -40px;">
-        <h2>ABOUT US</h2>
-        <h1 id="typing-effect2" style="font-weight: bold;"></h1><br>
+        <h2>ALL FEATURES</h2>
+        <h1 id="typing-effect4" style="font-weight: bold;"></h1><br>
+        <h1 id="typing-effect2" style="font-weight: bold;display: none;"></h1><br>
+
       </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-5">
-
-          <div class="col-xl-6 bounce-image" data-aos="zoom-out" data-aos-delay="100">
-            <img src="assets/img/bulb2.png" class="img-fluid" alt="" style="width: 20%;margin-left: -70px;margin-top: 70px;">
-          </div>
-
-          <div class="col-xl-6 bounce-image" data-aos="zoom-out" data-aos-delay="100" id="security">
-            <img src="assets/img/securityfg.png" class="img-fluid" alt="" style="width: 19%;margin-left: 0px;margin-top: 70px;">
-          </div>
-
-          <div class="col-xl-6 bounce-image" data-aos="zoom-out" data-aos-delay="100" id="data">
-            <img src="assets/img/datafg.jpg" class="img-fluid" alt="" style="width: 25%;margin-left: 300px;margin-top: 130px;">
-          </div>
-
-          <div class="col-xl-6 d-flex flex-column">
-            <div class="row align-self-center gy-4 flex-column">
-          
-              <div class="col-md-12" data-aos="fade-up" data-aos-delay="200" style="margin-left: -560px;margin-top: -200px;">
-                <div class="feature-box d-flex align-items-start flex-column">
-                  <div class="feature-box2 d-flex align-items-center">
-                    <i class="bi bi-check" style="margin-right: 10px;"></i>
-                    <h3 style="margin: 0;">Comprehensive Solutions for the FinTech Industry</h3>
-                  </div>
-                  <p style="text-align: justify; margin-top: 10px;">
-                    We specialize in providing comprehensive solutions tailored to meet the specific needs of businesses in the financial technology industry. From initial system design and development to implementation, maintenance, and ongoing support, we offer end-to-end services that empower organizations to thrive in the digital era..                  </p>
-                </div>
-              </div>
-          
-              <div class="col-md-12" data-aos="fade-up" data-aos-delay="200" style="margin-left: 180px;margin-top: -280px;">
-                <div class="feature-box d-flex align-items-start flex-column">
-                  <div class="feature-box2 d-flex align-items-center">
-                    <i class="bi bi-check" style="margin-right: 10px;"></i>
-                    <h3 style="margin: 0;">Security-First Approach to Fintech Solutions</h3>
-                  </div>
-                  <p style="text-align: justify; margin-top: 10px;">
-                    With security being paramount in the fintech landscape, we prioritize the integrity and confidentiality of our clients' data. Our expertise lies in developing secure fintech systems that comply with industry regulations and protect against cyber threats. We implement advanced security measures and adhere to best practices to ensure that sensitive information remains safeguarded throughout the digital ecosystem.                </div>
-              </div>
-          
-              <div class="col-md-12" data-aos="fade-up" data-aos-delay="200" style="margin-left: -180px;">
-                <div class="feature-box d-flex align-items-start flex-column">
-                  <div class="feature-box2 d-flex align-items-center">
-                    <i class="bi bi-check" style="margin-right: 10px;"></i>
-                    <h3 style="margin: 0;">Data-Driven Insights for Business Growth and Market Competitiveness.</h3>
-                  </div>
-                  <p style="text-align: justify; margin-top: 10px;">
-                    Our team of data experts collaborates closely with clients to understand their specific needs and develop tailored analytics strategies that enable them to gain valuable intelligence, identify trends, and enhance competitiveness in the market..              </div>
-          
-            </div>
-          </div>
-          
-
-        </div>
-
-      </div>
-    </section>
-
-    <section id="alt-features" class="alt-features section">
 
       <div class="container">
 
@@ -171,53 +124,92 @@
 
             <div class="row align-self-center gy-5">
 
-              <div class="col-md-6 icon-box">
-                <i class="bi bi-award"></i>
-                <div>
-                  <h4>Corporis voluptates sit</h4>
-                  <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-                </div>
-              </div><!-- End Feature Item -->
+                <div class="accordion" id="featureAccordion">
+                    <!-- Accordion Item 1 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          <i class="bi bi-file-text-fill" style="color: #012970; font-size: 1.5em; margin-right: 10px;"></i>
+                          INVOICING
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#featureAccordion">
+                        <div class="accordion-body">
+                          Take control of your neighborhood's finances with ease using our comprehensive suite of tools. From effortlessly generating auto-recurring invoices to accurately capturing expenses and creating detailed statements for each member, our platform empowers you to stay organized and informed. In addition, gain valuable insights with customizable income and expenditure reports tailored to your neighborhood's financial needs.
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <!-- Accordion Item 2 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <i class="bi bi-people-fill" style="color: #012970; font-size: 1.5em; margin-right: 10px;"></i>                          
+                            MEMBERSHIPS
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#featureAccordion">
+                        <div class="accordion-body">
+                            Easily manage your community with our intuitive membership management feature, allowing you to effortlessly add, update, deactivate, and delete members, ensuring your Neighborhood Eye experience remains seamless and tailored to your needs. Keep your members informed and engaged with our announcements feature that allows you to broadcast important messages to all members within the neighborhood, ensuring everyone stays up-to-date with the latest news, events, and updates.
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <!-- Accordion Item 3 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="bi bi-person-fill-add" style="color: #012970; font-size: 1.5em; margin-right: 10px;"></i>                          
+                            GUESTS
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#featureAccordion">
+                        <div class="accordion-body">
+                            Experience streamlined guest management like never before with our innovative tools, empowering every resident to effortlessly add guests, generate access codes, facilitate smooth check-ins and check-outs, and generate comprehensive reports, ensuring every interaction with your guests is seamless and secure.
+                        </div>
+                      </div>
+                    </div>
 
-              <div class="col-md-6 icon-box">
-                <i class="bi bi-card-checklist"></i>
-                <div>
-                  <h4>Ullamco laboris nisi</h4>
-                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-                </div>
-              </div><!-- End Feature Item -->
-
-              <div class="col-md-6 icon-box">
-                <i class="bi bi-dribbble"></i>
-                <div>
-                  <h4>Labore consequatur</h4>
-                  <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-                </div>
-              </div><!-- End Feature Item -->
-
-              <div class="col-md-6 icon-box">
-                <i class="bi bi-filter-circle"></i>
-                <div>
-                  <h4>Beatae veritatis</h4>
-                  <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
-                </div>
-              </div><!-- End Feature Item -->
-
-              <div class="col-md-6 icon-box">
-                <i class="bi bi-lightning-charge"></i>
-                <div>
-                  <h4>Molestiae dolor</h4>
-                  <p>Et fuga et deserunt et enim. Dolorem architecto ratione tensa raptor marte</p>
-                </div>
-              </div><!-- End Feature Item -->
-
-              <div class="col-md-6 icon-box">
-                <i class="bi bi-patch-check"></i>
-                <div>
-                  <h4>Explicabo consectetur</h4>
-                  <p>Est autem dicta beatae suscipit. Sint veritatis et sit quasi ab aut inventore</p>
-                </div>
-              </div><!-- End Feature Item -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <i class="bi bi-stripe" style="color: red; font-size: 1.5em; margin-right: 2px;"></i><i class="bi bi-0-square-fill" style="color: red; font-size: 1.5em; margin-right: 2px;"></i><i class="bi bi-stripe" style="color: red; font-size: 1.5em; margin-right: 2px;"></i>
+                            
+                          </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#featureAccordion">
+                          <div class="accordion-body">
+                            Stay safe and secure with our SOS button feature, providing instant notifications to dedicated security personnel and all members within your neighborhood. In times of distress, quickly alert responders with essential information to pinpoint your location, ensuring rapid assistance when you need it most. Your safety is our top priority.
+                          </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            <i class="bi bi-bell-fill" style="color: #012970; font-size: 1.5em; margin-right: 10px;"></i>
+                            ANNOUNCEMENTS
+                          </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#featureAccordion">
+                          <div class="accordion-body">
+                            Easily keep your community informed and engaged with our announcements feature. Admins can effortlessly broadcast important messages to all members within the neighborhood, ensuring everyone stays up-to-date with the latest news, events, and updates. Stay connected and informed with Neighborhood Eye.
+                          </div>
+                        </div>
+                    </div>   
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSix">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            <i class="bi bi-clipboard2-pulse-fill" style="color: #012970; font-size: 1.5em; margin-right: 10px;"></i>                           
+                            REPORTING
+                          </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#featureAccordion">
+                          <div class="accordion-body">
+                            Make data-driven decisions confidently. Our reporting tools provide the necessary information to strategize, budget effectively, and drive your organization forward.
+                          </div>
+                        </div>
+                    </div>       
+                  </div>
 
             </div>
 
@@ -234,14 +226,134 @@
     </section><!-- /Alt Features Section -->
 
 
+    <section id="features2" class="features section">
+
+        <div class="container section-title" data-aos="fade-up" style="margin-top: -40px;">
+          <h2>FEATURED FEATURES</h2>
+          <h1 id="typing-effect4" style="font-weight: bold;"></h1><br>
+          <h1 id="typing-effect2" style="font-weight: bold;display: none;"></h1><br>
+  
+        </div><!-- End Section Title -->
+  
+        <div class="container">
+  
+          <div class="row gy-5">
+  
+            <div class="col-xl-7 d-flex order-2 order-xl-1" data-aos="fade-up" data-aos-delay="200">
+  
+              <div class="row align-self-center gy-5">
+  
+                  <div class="accordion" id="featureAccordion">
+                      <!-- Accordion Item 1 -->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <i class="bi bi-file-text-fill" style="color: #012970; font-size: 1.5em; margin-right: 10px;"></i>
+                            INVOICING
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#featureAccordion">
+                          <div class="accordion-body">
+                            Take control of your neighborhood's finances with ease using our comprehensive suite of tools. From effortlessly generating auto-recurring invoices to accurately capturing expenses and creating detailed statements for each member, our platform empowers you to stay organized and informed. In addition, gain valuable insights with customizable income and expenditure reports tailored to your neighborhood's financial needs.
+                          </div>
+                        </div>
+                      </div>
+                    
+                      <!-- Accordion Item 2 -->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              <i class="bi bi-people-fill" style="color: #012970; font-size: 1.5em; margin-right: 10px;"></i>                          
+                              MEMBERSHIPS
+                          </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#featureAccordion">
+                          <div class="accordion-body">
+                              Easily manage your community with our intuitive membership management feature, allowing you to effortlessly add, update, deactivate, and delete members, ensuring your Neighborhood Eye experience remains seamless and tailored to your needs. Keep your members informed and engaged with our announcements feature that allows you to broadcast important messages to all members within the neighborhood, ensuring everyone stays up-to-date with the latest news, events, and updates.
+                          </div>
+                        </div>
+                      </div>
+                    
+                      <!-- Accordion Item 3 -->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              <i class="bi bi-person-fill-add" style="color: #012970; font-size: 1.5em; margin-right: 10px;"></i>                          
+                              GUESTS
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#featureAccordion">
+                          <div class="accordion-body">
+                              Experience streamlined guest management like never before with our innovative tools, empowering every resident to effortlessly add guests, generate access codes, facilitate smooth check-ins and check-outs, and generate comprehensive reports, ensuring every interaction with your guests is seamless and secure.
+                          </div>
+                        </div>
+                      </div>
+  
+                      <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                              <i class="bi bi-stripe" style="color: red; font-size: 1.5em; margin-right: 2px;"></i><i class="bi bi-0-square-fill" style="color: red; font-size: 1.5em; margin-right: 2px;"></i><i class="bi bi-stripe" style="color: red; font-size: 1.5em; margin-right: 2px;"></i>
+                              
+                            </button>
+                          </h2>
+                          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#featureAccordion">
+                            <div class="accordion-body">
+                              Stay safe and secure with our SOS button feature, providing instant notifications to dedicated security personnel and all members within your neighborhood. In times of distress, quickly alert responders with essential information to pinpoint your location, ensuring rapid assistance when you need it most. Your safety is our top priority.
+                            </div>
+                          </div>
+                      </div>
+                      <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                              <i class="bi bi-bell-fill" style="color: #012970; font-size: 1.5em; margin-right: 10px;"></i>
+                              ANNOUNCEMENTS
+                            </button>
+                          </h2>
+                          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#featureAccordion">
+                            <div class="accordion-body">
+                              Easily keep your community informed and engaged with our announcements feature. Admins can effortlessly broadcast important messages to all members within the neighborhood, ensuring everyone stays up-to-date with the latest news, events, and updates. Stay connected and informed with Neighborhood Eye.
+                            </div>
+                          </div>
+                      </div>   
+                      <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                              <i class="bi bi-clipboard2-pulse-fill" style="color: #012970; font-size: 1.5em; margin-right: 10px;"></i>                           
+                              REPORTING
+                            </button>
+                          </h2>
+                          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#featureAccordion">
+                            <div class="accordion-body">
+                              Make data-driven decisions confidently. Our reporting tools provide the necessary information to strategize, budget effectively, and drive your organization forward.
+                            </div>
+                          </div>
+                      </div>       
+                    </div>
+  
+              </div>
+  
+            </div>
+  
+            <div class="col-xl-5 d-flex align-items-center order-1 order-xl-2" data-aos="fade-up" data-aos-delay="100">
+              <img src="assets/img/alt-features.png" class="img-fluid" alt="">
+            </div>
+  
+          </div>
+  
+        </div>
+  
+      </section><!-- /Alt Features Section -->
+
+
+
 
     <!-- Pricing Section -->
     <section id="pricing" class="pricing section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Pricing</h2>
-        <p>Check Our Affordable Pricing<br></p>
+        <h2>PLANS</h2>
+        <p>Check Our Affordable Payment Plans<br></p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -250,17 +362,19 @@
 
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
             <div class="pricing-tem">
-              <h3 style="color: #20c997;">Free Plan</h3>
-              <div class="price"><sup>$</sup>0<span> / mo</span></div>
+              <h3 style="color: #012970;">OPEN NEIGHBORHOOD PLAN</h3>
+              <div class="price"><sup>$</sup>1<span>/ HOUSEHOLD / MONTH</span></div>
               <div class="icon">
-                <i class="bi bi-box" style="color: #20c997;"></i>
+                <i class="bi bi-house-fill" style="color: #012970;"></i>
               </div>
               <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li class="na">Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
+                <li><i class="bi bi-check-square-fill" style="color: #012970;"></i>   Membership Management</li>
+                <li><i class="bi bi-check-square-fill" style="color: #012970;"></i>   Smart notification</li>
+                <li><i class="bi bi-check-square-fill" style="color: #012970;"></i>   Invoicing</li>
+                <li><i class="bi bi-check-square-fill" style="color: #012970;"></i>   Expense Tracking</li>
+                <li><i class="bi bi-check-square-fill" style="color: #012970;"></i>   Income & Expenditure Report</li>
+                <li><i class="bi bi-check-square-fill" style="color: #012970;"></i>   SOS Feature</li>
+                <li class="na"> <i class="bi bi-exclamation-square-fill"></i>Guest Management</li>
               </ul>
               <a href="#" class="btn-buy">Buy Now</a>
             </div>
@@ -268,54 +382,20 @@
 
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
             <div class="pricing-tem">
-              <span class="featured">Featured</span>
-              <h3 style="color: #0dcaf0;">Starter Plan</h3>
-              <div class="price"><sup>$</sup>19<span> / mo</span></div>
+              <h3 style="color: #012970">GATED COMMUNITY PLAN</h3>
+              <div class="price"><sup>$</sup>2<span> / HOUSEHOLD / MONTH </span></div>
               <div class="icon">
-                <i class="bi bi-send" style="color: #0dcaf0;"></i>
+                <i class="bi bi-house-lock-fill" style="color: #012970;"></i>
               </div>
               <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <a href="#" class="btn-buy">Buy Now</a>
-            </div>
-          </div><!-- End Pricing Item -->
+                <li><i class="bi bi-check-square-fill" style="color: #012970;"></i>   Membership Management</li>
+                <li><i class="bi bi-check-square-fill" style="color: #012970;"></i>   Smart notification</li>
+                <li><i class="bi bi-check-square-fill" style="color: #012970;"></i>   Invoicing</li>
+                <li><i class="bi bi-check-square-fill" style="color: #012970;"></i>   Expense Tracking</li>
+                <li><i class="bi bi-check-square-fill" style="color: #012970;"></i>   Income & Expenditure Report</li>
+                <li><i class="bi bi-check-square-fill" style="color: #012970;"></i>   SOS Feature</li>
+                <li><i class="bi bi-check-square-fill" style="color: #012970;"></i>   Guest Management</li>
 
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-            <div class="pricing-tem">
-              <h3 style="color: #fd7e14;">Business Plan</h3>
-              <div class="price"><sup>$</sup>29<span> / mo</span></div>
-              <div class="icon">
-                <i class="bi bi-airplane" style="color: #fd7e14;"></i>
-              </div>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <a href="#" class="btn-buy">Buy Now</a>
-            </div>
-          </div><!-- End Pricing Item -->
-
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
-            <div class="pricing-tem">
-              <h3 style="color: #0d6efd;">Ultimate Plan</h3>
-              <div class="price"><sup>$</sup>49<span> / mo</span></div>
-              <div class="icon">
-                <i class="bi bi-rocket" style="color: #0d6efd;"></i>
-              </div>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
               </ul>
               <a href="#" class="btn-buy">Buy Now</a>
             </div>
@@ -538,101 +618,6 @@
 
     </section><!-- /Testimonials Section -->
 
-    <!-- Team Section -->
-    <section id="team" class="team section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Team</h2>
-        <p>Our hard working team</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
-                <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
-                <p>Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit corporis. Voluptate sed quas reiciendis animi neque sapiente.</p>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
-                <p>Vero omnis enim consequatur. Voluptas consectetur unde qui molestiae deserunt. Voluptates enim aut architecto porro aspernatur molestiae modi.</p>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
-                <p>Rerum voluptate non adipisci animi distinctio et deserunt amet voluptas. Quia aut aliquid doloremque ut possimus ipsum officia.</p>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Team Section -->
-
     <!-- Clients Section -->
     <section id="clients" class="clients section">
 
@@ -694,118 +679,6 @@
       </div>
 
     </section><!-- /Clients Section -->
-
-    <!-- Recent Posts Section -->
-    <section id="recent-posts" class="recent-posts section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Recent Posts</h2>
-        <p>Recent posts form our Blog</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-5">
-
-          <div class="col-xl-4 col-md-6">
-            <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="100">
-
-              <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-1.jpg" class="img-fluid" alt="">
-                <span class="post-date">December 12</span>
-              </div>
-
-              <div class="post-content d-flex flex-column">
-
-                <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis</h3>
-
-                <div class="meta d-flex align-items-center">
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-person"></i> <span class="ps-2">Julia Parker</span>
-                  </div>
-                  <span class="px-3 text-black-50">/</span>
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-folder2"></i> <span class="ps-2">Politics</span>
-                  </div>
-                </div>
-
-                <hr>
-
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
-              </div>
-
-            </div>
-          </div><!-- End post item -->
-
-          <div class="col-xl-4 col-md-6">
-            <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="200">
-
-              <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-2.jpg" class="img-fluid" alt="">
-                <span class="post-date">July 17</span>
-              </div>
-
-              <div class="post-content d-flex flex-column">
-
-                <h3 class="post-title">Et repellendus molestiae qui est sed omnis</h3>
-
-                <div class="meta d-flex align-items-center">
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-person"></i> <span class="ps-2">Mario Douglas</span>
-                  </div>
-                  <span class="px-3 text-black-50">/</span>
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-folder2"></i> <span class="ps-2">Sports</span>
-                  </div>
-                </div>
-
-                <hr>
-
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
-              </div>
-
-            </div>
-          </div><!-- End post item -->
-
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="post-item position-relative h-100">
-
-              <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt="">
-                <span class="post-date">September 05</span>
-              </div>
-
-              <div class="post-content d-flex flex-column">
-
-                <h3 class="post-title">Quia assumenda est et veritati tirana ploder</h3>
-
-                <div class="meta d-flex align-items-center">
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-person"></i> <span class="ps-2">Lisa Hunter</span>
-                  </div>
-                  <span class="px-3 text-black-50">/</span>
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-folder2"></i> <span class="ps-2">Economics</span>
-                  </div>
-                </div>
-
-                <hr>
-
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
-              </div>
-
-            </div>
-          </div><!-- End post item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Recent Posts Section -->
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
@@ -987,6 +860,9 @@
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
