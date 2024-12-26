@@ -232,6 +232,105 @@ function typeEffect4() {
 typeEffect4();  
 
 
+const text5 = "Neighborhood Eye App Featured Features ...";
+let index5 = 0;
+let isDeleting5 = false; // Track whether we are typing or deleting
+const typingSpeed5 = 100; // Typing speed
+const deletingSpeed5 = 50; // Deleting speed
+const pauseDuration5 = 4000; // Pause duration after typing completes
+
+function typeEffect5() {
+    const element5 = document.getElementById("typing-effect5");
+
+    if (!isDeleting5) {
+        // Typing phase
+        element5.textContent = text5.slice(0, index5);
+        index5++;
+
+        if (index5 === 1) {
+            // Apply fade-in effect at the start of typing
+            element5.classList.add("fade-in");
+        }
+
+        if (index5 > text5.length) {
+            // Pause briefly before starting deletion
+            setTimeout(() => {
+                isDeleting5 = true;
+                typeEffect5(); // Correctly call typeEffect2 here
+            }, pauseDuration5);
+            return;
+        }
+    } else {
+        // Deleting phase
+        element5.textContent = text5.slice(0, index5);
+        index5--;
+
+        if (index5 < 0) {
+            // Reset for next typing cycle
+            isDeleting5 = false;
+            element5.classList.remove("fade-in"); // Remove fade-in to reapply
+        }
+    }
+
+    // Adjust speed based on phase
+    const speed5 = isDeleting5 ? deletingSpeed5 : typingSpeed5;
+    setTimeout(typeEffect5, speed5);
+}
+
+// Start the second typing effect
+typeEffect5();  
+
+
+const text6 = "Check Out Our Affordable Payment Plans ...";
+let index6 = 0;
+let isDeleting6 = false; // Track whether we are typing or deleting
+const typingSpeed6 = 100; // Typing speed
+const deletingSpeed6 = 50; // Deleting speed
+const pauseDuration6 = 4000; // Pause duration after typing completes
+
+function typeEffect6() {
+    const element6 = document.getElementById("typing-effect6");
+
+    if (!isDeleting6) {
+        // Typing phase
+        element6.textContent = text6.slice(0, index6);
+        index6++;
+
+        if (index6 === 1) {
+            // Apply fade-in effect at the start of typing
+            element6.classList.add("fade-in");
+        }
+
+        if (index6 > text6.length) {
+            // Pause briefly before starting deletion
+            setTimeout(() => {
+                isDeleting6 = true;
+                typeEffect6(); // Correctly call typeEffect2 here
+            }, pauseDuration6);
+            return;
+        }
+    } else {
+        // Deleting phase
+        element6.textContent = text6.slice(0, index6);
+        index6--;
+
+        if (index6 < 0) {
+            // Reset for next typing cycle
+            isDeleting6 = false;
+            element6.classList.remove("fade-in"); // Remove fade-in to reapply
+        }
+    }
+
+    // Adjust speed based on phase
+    const speed6 = isDeleting6 ? deletingSpeed6 : typingSpeed6;
+    setTimeout(typeEffect6, speed6);
+}
+
+// Start the second typing effect
+typeEffect6();  
+
+
+
 
   /**
    * Hide mobile nav on same-page/hash links
