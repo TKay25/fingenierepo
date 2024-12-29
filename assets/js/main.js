@@ -330,7 +330,53 @@ function typeEffect6() {
 typeEffect6();  
 
 
+const text10 = "Your Community, Your App ...";
+let index10 = 0;
+let isDeleting10 = false; // Track whether we are typing or deleting
+const typingSpeed10 = 100; // Typing speed
+const deletingSpeed10 = 50; // Deleting speed
+const pauseDuration10 = 4000; // Pause duration after typing completes
 
+function typeEffect10() {
+    const element10 = document.getElementById("typing-effect10");
+
+    if (!isDeleting10) {
+        // Typing phase
+        element10.textContent = text10.slice(0, index10);
+        index10++;
+
+        if (index10 === 1) {
+            // Apply fade-in effect at the start of typing
+            element10.classList.add("fade-in");
+        }
+
+        if (index10 > text10.length) {
+            // Pause briefly before starting deletion
+            setTimeout(() => {
+                isDeleting10 = true;
+                typeEffect10(); // Correctly call typeEffect2 here
+            }, pauseDuration10);
+            return;
+        }
+    } else {
+        // Deleting phase
+        element10.textContent = text10.slice(0, index10);
+        index10--;
+
+        if (index10 < 0) {
+            // Reset for next typing cycle
+            isDeleting10 = false;
+            element10.classList.remove("fade-in"); // Remove fade-in to reapply
+        }
+    }
+
+    // Adjust speed based on phase
+    const speed10 = isDeleting10 ? deletingSpeed10 : typingSpeed10;
+    setTimeout(typeEffect10, speed10);
+}
+
+// Start the second typing effect
+typeEffect10();  
 
   /**
    * Hide mobile nav on same-page/hash links
