@@ -936,7 +936,9 @@ section,
     box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
     width: 60%;
   }
-  
+  .stuff1{
+    margin-top: -2rem;
+  }
   .hero .btn-get-started i {
     margin-left: 5px;
     font-size: 13px;
@@ -945,6 +947,7 @@ section,
   #services-button{
     margin-left: 0;
     margin-top: 2rem;
+    width: 80%;
   }
   #neigheye{
     margin-top: -1rem;
@@ -994,7 +997,7 @@ section,
   #hero-image {
     transition: opacity 1s ease-in-out; /* Smooth fade transition */
     opacity: 0; /* Initial state for fade-out */
-    width: 40%;
+    width: 45%;
     margin-left: 6.3rem;
   }
 
@@ -1011,7 +1014,7 @@ section,
     font-size: 1rem;
     white-space: nowrap; /* Prevent wrapping */
     overflow: hidden; /* Hide overflowing text */
-    margin-top: -29rem;
+    margin-top: -26rem;
   }
   #par1{
     background-color: #0d6dfd04;
