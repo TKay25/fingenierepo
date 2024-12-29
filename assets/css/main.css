@@ -913,8 +913,81 @@ section,
   padding-bottom: 12px;
   margin-top: 20px;
 }
+#services-button{
+  margin-left: 20px;
+}
 
-@media (max-width: 768px) {
+@media (max-width: 1199px) {
+
+  .hero .btn-get-started {
+    color: var(--contrast-color);
+    background: var(--heading-color);
+    font-family: var(--heading-font);
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 1px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 10px;
+    border-radius: 12px;
+    transition: 0.5s;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+    width: 60%;
+  }
+  
+  .hero .btn-get-started i {
+    margin-left: 5px;
+    font-size: 13px;
+    transition: 0.3s;
+  }
+  #services-button{
+    margin-left: 0;
+    margin-top: 2rem;
+    width: 70%;
+  }
+  #neigheye{
+    margin-top: -1rem;
+  }
+  .popout-button {
+    animation: popout 3s infinite; /* Runs the animation every 3 seconds */
+    transform-origin: center; /* Scaling happens from the center */
+  
+  }
+  
+  @keyframes popout {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1); /* Slightly larger size during "pop out" */
+    }
+    100% {
+        transform: scale(1); /* Return to normal size */
+    }
+  }
+  .hero .btn-get-started:hover {
+    color: var(--contrast-color);
+    background: color-mix(in srgb, var(--heading-color), transparent 15%);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hero .btn-get-started:hover i {
+    transform: translateX(5px);
+  }
+  
+  .section-title p {
+    color: var(--heading-color);
+    margin: 10px 0 0 0;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: var(--heading-font);
+  }
+  
+  .section-title p .description-title {
+    color: var(--accent-color);
+  }
   .pricing-tem {
     width: 100%; /* Ensure the cards take full width on smaller screens */
   }
@@ -922,8 +995,8 @@ section,
   #hero-image {
     transition: opacity 1s ease-in-out; /* Smooth fade transition */
     opacity: 0; /* Initial state for fade-out */
-    width: 50%;
-    margin-left: 7rem;
+    width: 60%;
+    margin-left: 4.5rem;
   }
 
   .section-title {
@@ -936,22 +1009,24 @@ section,
   #typing-effect {
     position: absolute;
     margin-left: 1rem;
-    font-size: 1.3rem;
+    font-size: 1rem;
     white-space: nowrap; /* Prevent wrapping */
     overflow: hidden; /* Hide overflowing text */
-    margin-top: -22rem;
+    margin-top: -27rem;
   }
   #par1{
     background-color: #0d6dfd04;
     border-radius: 8px; 
-    padding-left: 15px;
+    padding-right: 5px;
     border-left: 15px solid #012970;
     color:#012970; 
     text-align: justify;
+    margin-left: 0.8rem;
     padding-top: 12px;
     padding-bottom: 12px;
     margin-top: -40px;
-    font-size: 13px;
+    font-size: 12px;
+    width: 90%;
   }
 }
 
